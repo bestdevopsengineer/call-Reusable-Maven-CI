@@ -7,7 +7,7 @@ on:
 
 jobs:
   call-reusable-ci:
-    uses: ./.github/workflows/maven-ci.yml
+    uses: bestdevopsengineer/composite_action/.github/workflows/maven-ci.yml@main
     with:
       java-version: "21"
       run-tests: true
