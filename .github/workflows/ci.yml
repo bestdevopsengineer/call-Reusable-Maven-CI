@@ -1,0 +1,13 @@
+name: "Project CI"
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+
+jobs:
+  call-reusable-ci:
+    uses: ./.github/workflows/maven-ci.yml
+    with:
+      java-version: "21"
+      run-tests: true
